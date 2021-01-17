@@ -1,0 +1,1 @@
+docker build . -t sgaunet/postgis:12.5-alpine
