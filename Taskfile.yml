@@ -1,0 +1,13 @@
+# https://taskfile.dev
+version: '3'
+vars:
+  IMG: sgaunet/postgis:latest
+
+tasks:
+  default:
+    cmds:
+      - docker build . -t sgaunet/postgis:latest
+      - docker push sgaunet/postgis:latest
+  run:
+    cmds:
+      - docker run -ti --rm -e POSTGRES_HOST_AUTH_METHOD=trust sgaunet/postgis:latest
