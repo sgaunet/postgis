@@ -1,3 +1,6 @@
+
+**ARCHIVED project**, please use this one instead: [https://github.com/kartoza/docker-postgis](https://github.com/kartoza/docker-postgis) ot the official image.
+
 # postgis
 
 Postgis Database Image with plperl extension. It's based on [the officiel postgis image. ](https://registry.hub.docker.com/r/postgis/postgis/)
