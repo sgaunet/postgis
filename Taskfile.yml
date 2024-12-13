@@ -14,7 +14,10 @@ tasks:
     cmds:
       - docker build --no-cache . -t sgaunet/postgis:latest
       - docker push sgaunet/postgis:latest
+  
   run:
     desc: "Run the docker image"
+    dir: deploy
     cmds:
-      - docker run -ti --rm -e POSTGRES_HOST_AUTH_METHOD=trust sgaunet/postgis:latest
+      - docker compose up -d
+
